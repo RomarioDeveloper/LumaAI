@@ -1,0 +1,44 @@
+# FastAPI и сервер
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Обработка медиа
+opencv-python==4.8.1.78
+Pillow==10.1.0
+moviepy==1.0.3
+pydub==0.25.1
+
+# Speech to Text
+openai-whisper==20231117
+torch==2.1.0
+torchaudio==2.1.0
+librosa==0.10.1  # Для обрезки аудио
+soundfile==0.12.1  # Для сохранения аудио
+pyannote.audio==3.1.1  # Speaker diarization (распознавание спикеров)
+
+# Image to Text
+easyocr==1.7.0
+# Используем только EasyOCR для совместимости
+# paddlepaddle==3.0.0  # Закомментировано - слишком тяжелый для macOS
+# paddleocr==2.7.3
+
+# Translation
+transformers==4.35.0
+sentencepiece==0.1.99
+accelerate==0.24.1
+deep-translator==1.11.4
+# Альтернативные бесплатные решения для перевода
+translators==5.9.1  # Поддерживает Google, Bing, Yandex и другие бесплатные API  # БЫСТРЫЙ перевод через Google Translator API
+
+# Text to Speech (бонус)
+# TTS==0.20.0  # Coqui TTS - закомментировано из-за конфликта зависимостей
+gTTS==2.5.4  # Google Text-to-Speech (быстрый и бесплатный, основной)
+
+# Утилиты
+aiofiles==23.2.1
+python-dotenv==1.0.0
+numpy>=1.24.0,<2.0.0  # Совместимость с большинством библиотек
+
